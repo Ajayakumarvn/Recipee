@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+body {
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+.card {
+  background-color: #fff;
+}
+.main_banner {
+  background: url(./assets/main_banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.main_banner::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.menulist,
+.banner-head,
+.banner_button {
+  position: relative;
+  z-index: 9;
+}
+.res-heading {
+  font-family: "Dancing Script", cursive;
+  color: #333;
+  font-size: 2em;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  margin: 0 15px;
+}
+.menulist .menu a:hover {
+  color: #7fffd4 !important;
+}
+.menulist .menu a,
+.navbar-brand {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #fff !important;
+}
+.menulist .menu a {
+  font-size: 1.5em;
+}
+.menulist .navbar-brand {
+  font-size: 2em;
+}
+.banner-head {
+  color: #7fffd4;
+  font-family: "Dancing Script", cursive;
+}
+.recipe-names {
+  font-family: "Dancing Script", cursive;
+  color: #333;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 900;
+  margin: 40px 0;
+}
+.recipe_subtitle {
+  font-family: "Dancing Script", cursive;
+  color: #333;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.recipe_card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.recipe_desc {
+  margin-bottom: 50px;
+}
+.banner_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner_button {
+  border: 2px solid #fff;
+  padding: 20px 30px;
+  font-size: 1.3em;
+  background: transparent;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  max-width: 250px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  transition: all ease-in 0.5s;
+  margin-top: 20px;
+  transform: scale(1);
+}
+.banner_button:hover {
+  border: 2px solid #7fffd4;
+  color: #556b2f;
+  background-color: #7fffd4;
+  transform: scale(0.9);
+}
+/* Banner */
+.banner {
+  background: url(./assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-cap {
+  font-family: "Dancing Script", cursive;
+  margin-left: 110px;
+  font-size: 5em;
+  color: aqua;
+}
+.recipe_desc_text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
